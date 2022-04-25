@@ -179,6 +179,4 @@ for (let i = 0; i <= 9; i++) {
 
 for (let i = 0; i <= 10; i++) {
     console.log(i, "Intentando dormir");
-
-    console.log(10, "Dormido")
 }
