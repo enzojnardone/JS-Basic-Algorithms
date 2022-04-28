@@ -62,15 +62,15 @@ console.log("El coche 2 tiene un final price de", car2.finalPrice);
 
 // 1.1 Multiplica 10 por 5 y muestra el resultado mediante alert.
 
-// alert (10 * 5)
+alert (10 * 5)
 
 // 1.2 Divide 10 por 2 y muestra el resultado en un alert.
 
-// alert (10 / 2)
+alert (10 / 2)
 
 // 1.3 Muestra mediante un alert el resto de dividir 15 por 9.
 
-// alert (15 / 9)
+alert (15 / 9)
 
 // 1.4 Usa el correcto operador de asignación que resultará en x = 15, 
 // teniendo dos variables y = 10 y z = 5.
@@ -103,7 +103,7 @@ console.log(avenger)
 // 1.2 Cambia el primer elemento de avengers a "IRONMAN"
 // const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
 
-avengers.push("IRONMAN")
+// avengers.unshift("IRONMAN")
 avengers.splice (0, 0, "IRONMAN")
 avenger = avengers[0]
 console.log(avenger)
@@ -111,8 +111,7 @@ console.log(avenger)
 // 1.3 Alert numero de elementos en el array usando la propiedad correcta de Array.
 // const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
 
-// avengers.pop (6)
-// alert(avengers.length);
+alert(avengers.length);
 
 // 1.4 Añade 2 elementos al array: "Morty" y "Summer". 
 // Muestra en consola el último personaje del array
@@ -169,27 +168,44 @@ if (number3 * 5 == number1 && number1 * 2 == number2) {
       console.log("number2 entre 2 es igual a number1 O number1 entre 5 es igual a number3");
   }
 
-// //   Iteración #6: Bucles
+//   Iteración #6: Bucles
 
-// // 1.1 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola.
+// 1.1 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola.
 
-// for (let i = 0; i <= 9; i++) {
-//     console.log(i)
-// }
+for (let i = 0; i <= 9; i++) {
+    console.log(i)
+}
 
 // // // 1.2 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola solo 
 // // // cuando el resto del numero dividido entre 2 sea 0.
 
-// // for ( let i; i <= 9; i++) {
-
-// // }
+for (let i = 0; i <= 9; i++) {
+    if (i / 2 === 0) {
+        console.log(i)
+    }
+}
 
 // // 1.3 Crea un bucle para conseguir dormir contando ovejas. 
 // // Este bucle empieza en 0 y termina en 10. 
 // // Muestra por consola un mensaje diciendo 'Intentando dormir' en cada vuelta del bucle 
 // // y cambia el mensaje en la última vuelta a 'Dormido!'.
 
+for (let i = 0; i <= 10; i++) {
+    if (i < 10) {
+        console.log(i, "Intentando dormir")
+    } else {
+        console.log(i, "Dormido")
+    }
+}
 
-// for (let i = 0; i <= 10; i++) {
-//     console.log(i, "Intentando dormir");
-// }
+// Realizamos un bucle forEach a partir de un array "numbers"
+
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+numbers.forEach(function(numeros, index, array) {
+    if (numeros < 10) {
+        console.log(numeros, "Intentando dormir")
+    }else {
+        console.log(numeros, "Dormido")
+    }
+})
